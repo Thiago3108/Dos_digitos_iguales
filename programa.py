@@ -10,12 +10,18 @@ n = int(input("ingrese el entero: "))
 
 # procesing
 
-ultimo_digito = n % 10
-penultimo = (n % 100)//10
-rta = ultimo_digito == penultimo
-# output
-
-if (rta == True):
-    print("los dos ultimos digitos son iguales ")
+if (n>0):
+    ud = (n % 10)
+    p = (n % 100)//10
+    if (ud == p):
+       print("los dos ultimos digitos son iguales ")
+    else:
+     print ("los dos ultimos digitos no son iguales")
 else:
-    print ("los dos ultimos digitos no son iguales")
+    udN = -(n % 10)
+    pN = -(n % 100)//10
+    if (udN == pN ):
+       print("los dos ultimos digitos son iguales ")
+    else:
+       print ("los dos ultimos digitos no son iguales")
+    
